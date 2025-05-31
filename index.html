@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smart Home Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Smart Home Control Dashboard</h1>
+  </header>
+
+  <main>
+    <section class="device" id="light-section">
+      <h2>Lights</h2>
+      <button onclick="toggleDevice('light')">Toggle Light</button>
+      <p id="light-status">Status: OFF</p>
+    </section>
+
+    <section class="device" id="thermostat-section">
+      <h2>Thermostat</h2>
+      <input type="range" min="16" max="30" value="22" id="thermo-slider" oninput="updateTemp()">
+      <p id="temp-status">Temperature: 22°C</p>
+    </section>
+
+    <section class="device" id="security-section">
+      <h2>Security</h2>
+      <button onclick="toggleDevice('security')">Toggle Security</button>
+      <p id="security-status">Status: OFF</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
