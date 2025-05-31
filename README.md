@@ -1,1 +1,2 @@
-# codec_task1
+Smart Home Control Dashboard
+
